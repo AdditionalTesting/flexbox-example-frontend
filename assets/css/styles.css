@@ -13,6 +13,7 @@ nav{
     list-style: none;
 }
 a{
+    color: #fff;
     text-decoration: none;
     opacity: 0.75;
 }
@@ -21,7 +22,27 @@ a:hover{
     opacity: 1;
 }
 
+a.btn{
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+
 header{
+    color: #fff;
+    position: absolute;
+    width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +52,7 @@ header{
 
 @keyframes fadein {
     100%{
-        
+
     }
 }
 
@@ -46,4 +67,39 @@ header nav{
 
 header nav li{
     margin: 0 15px;
+}
+
+
+
+.hero{
+    color:#fff;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.hero .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: #80a3db;
+}
+
+.hero h1{
+    font: bold 60px "Open Sans";
+    margin-bottom: 15px;
+}
+
+.hero h3{
+    font: normal 28px "Open Sans";
+    margin-bottom: 40px;
+}
+
+.hero a.btn{
+    padding: 20px 46px;
 }
